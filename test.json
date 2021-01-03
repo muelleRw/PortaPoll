@@ -1,0 +1,281 @@
+{
+    'tag_name': 'LIT_Plant_Available_Water', 
+    'dim': 0, 
+    'instance_id': 1125, 
+    'symbol_address': 7688, 
+    'symbol_object_address': 2008108, 
+    'software_control': 67229377, 
+    'alias': False, 
+    'external_access': 'Read/Write', 
+    'dimensions': [
+        0,
+        0,
+        0
+    ], 
+    'tag_type': 'struct', 
+    'template_instance_id': 1670, 
+    'data_type': {
+        'name': 'aoiAi_5Alarm', 
+        'internal_tags': {
+            '__BitHost00': {
+                'offset': 0, 
+                'tag_type': 'atomic', 
+                'data_type': 'DINT', 
+                'array': 0
+            }, 
+            'EnableIn': {
+                'offset': 0, 
+                'tag_type': 'atomic', 
+                'data_type': 'BOOL', 
+                'bit': 0
+            }, 
+            'EnableOut': {
+                'offset': 0, 
+                'tag_type': 'atomic', 
+                'data_type': 'BOOL', 
+                'bit': 1
+            }, 
+            'RawIn': {
+                'offset': 4, 
+                'tag_type': 'atomic', 
+                'data_type': 'REAL', 
+                'array': 0
+            }, 
+            'RawMin': {
+                'offset': 8, 
+                'tag_type': 'atomic', 
+                'data_type': 'REAL', 
+                'array': 0
+            }, 
+            'RawMax': {
+                'offset': 12, 
+                'tag_type': 'atomic', 
+                'data_type': 'REAL', 
+                'array': 0
+            }, 
+            'EuMin': {
+                'offset': 16, 
+                'tag_type': 'atomic', 
+                'data_type': 'REAL', 
+                'array': 0
+            }, 
+            'EuMax': {
+                'offset': 20, 
+                'tag_type': 'atomic', 
+                'data_type': 'REAL', 
+                'array': 0
+            }, 
+            'LimitOutput': {
+                'offset': 0, 
+                'tag_type': 'atomic', 
+                'data_type': 'BOOL', 
+                'bit': 2
+            }, 
+            'EuOut': {
+                'offset': 24, 
+                'tag_type': 'atomic', 
+                'data_type': 'REAL', 
+                'array': 0
+            }, 
+            'DeviceEnable': {
+                'offset': 0, 
+                'tag_type': 'atomic', 
+                'data_type': 'BOOL', 
+                'bit': 3
+            }, 
+            'HiHiSet': {
+                'offset': 28, 
+                'tag_type': 'atomic', 
+                'data_type': 'REAL', 
+                'array': 0
+            }, 'HiHiSetMin': {'offset': 32, 'tag_type': 'atomic', 'data_type': 'REAL', 'array': 0
+            }, 'HiHiSetMax': {'offset': 36, 'tag_type': 'atomic', 'data_type': 'REAL', 'array': 0
+            }, 'HiSet': {'offset': 40, 'tag_type': 'atomic', 'data_type': 'REAL', 'array': 0
+            }, 'HiSetMin': {'offset': 44, 'tag_type': 'atomic', 'data_type': 'REAL', 'array': 0
+            }, 'HiSetMax': {'offset': 48, 'tag_type': 'atomic', 'data_type': 'REAL', 'array': 0
+            }, 'LoSet': {'offset': 52, 'tag_type': 'atomic', 'data_type': 'REAL', 'array': 0
+            }, 'LoSetMin': {'offset': 56, 'tag_type': 'atomic', 'data_type': 'REAL', 'array': 0
+            }, 'LoSetMax': {'offset': 60, 'tag_type': 'atomic', 'data_type': 'REAL', 'array': 0
+            }, 'LoLoSet': {'offset': 64, 'tag_type': 'atomic', 'data_type': 'REAL', 'array': 0
+            }, 'LoLoSetMin': {'offset': 68, 'tag_type': 'atomic', 'data_type': 'REAL', 'array': 0
+            }, 'LoLoSetMax': {'offset': 72, 'tag_type': 'atomic', 'data_type': 'REAL', 'array': 0
+            }, 'HiHiOut': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 4
+            }, 'HiOut': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+            }, 
+    'LoOut': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+            }, 'LoLoOut': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+            }, 'ChFltOut': {'offset': 1, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 0
+            }, 'HiHiArm': {'offset': 1, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 1
+            }, 'HiHiArmDelay': {'offset': 76, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'HiHiAlarmDelay': {'offset': 80, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'HiHiHornPriority': {'offset': 84, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'HiHiExists': {'offset': 1, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 2
+            }, 'HiHiNak': {'offset': 1, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 3
+            }, 'HiHiActive': {'offset': 1, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 4
+            }, 'HiHiAck': {'offset': 1, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+            }, 'HiHiResetLatch': {'offset': 1, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+            }, 'HiHiReset': {'offset': 1, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+            }, 'HiHiInhibit': {'offset': 2, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 0
+            }, 'HiArm': {'offset': 2, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 1
+            }, 'HiArmDelay': {'offset': 88, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'HiAlarmDelay': {'offset': 92, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'HiHornPriority': {'offset': 96, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'HiExists': {'offset': 2, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 2
+            }, 'HiNak': {'offset': 2, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 3
+            }, 'HiActive': {'offset': 2, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 4
+            }, 'HiAck': {'offset': 2, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+            }, 'HiResetLatch': {'offset': 2, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+            }, 'HiReset': {'offset': 2, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+            }, 'HiInhibit': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 0
+            }, 'LoArm': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 1
+            }, 'LoArmDelay': {'offset': 100, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'LoAlarmDelay': {'offset': 104, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'LoHornPriority': {'offset': 108, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'LoExists': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 2
+            }, 'LoNak': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 3
+            }, 'LoActive': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 4
+            }, 'LoAck': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+            }, 'LoResetLatch': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+            }, 'LoReset': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+            }, '__BitHost01': {'offset': 112, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'LoInhibit': {'offset': 112, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 0
+            }, 'LoLoArm': {'offset': 112, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 1
+            }, 'LoLoArmDelay': {'offset': 116, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'LoLoAlarmDelay': {'offset': 120, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'LoLoHornPriority': {'offset': 124, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'LoLoExists': {'offset': 112, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 2
+            }, 'LoLoNak': {'offset': 112, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 3
+            }, 'LoLoActive': {'offset': 112, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 4
+            }, 'LoLoAck': {'offset': 112, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+            }, 'LoLoResetLatch': {'offset': 112, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+            }, 'LoLoReset': {'offset': 112, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+            }, 'LoLoInhibit': {'offset': 113, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 0
+            }, 'ChFltArm': {'offset': 113, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 1
+            }, 'ChFltMax': {'offset': 128, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'ChFltMin': {'offset': 132, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'ChFltAlarmDelay': {'offset': 136, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'ChFltHornPriority': {'offset': 140, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'ChFltExists': {'offset': 113, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 2
+            }, 'ChFltNak': {'offset': 113, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 3
+            }, 'ChFltActive': {'offset': 113, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 4
+            }, 'ChFltAck': {'offset': 113, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+            }, 'ChFltResetLatch': {'offset': 113, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+            }, 'ChFltReset': {'offset': 113, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+            }, 'ChFltInhibit': {'offset': 114, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 0
+            }, 'HiAlarmDelayTmr': {'offset': 144, 'tag_type': 'struct', 'data_type': {'name': 'TIMER', 'internal_tags': {'CTL': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'DWORD', 'array': 0
+                        }, 'PRE': {'offset': 4, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'ACC': {'offset': 8, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'EN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+                        }, 'TT': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+                        }, 'DN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+                        }
+                    }, 'attributes': ['CTL', 'PRE', 'ACC', 'EN', 'TT', 'DN'
+                    ], 'template': {'object_definition_size': 24, 'structure_size': 12, 'member_count': 6, 'structure_handle': 3971
+                    }
+                }, 'array': 0
+            }, 'LoAlarmDelayTmr': {'offset': 156, 'tag_type': 'struct', 'data_type': {'name': 'TIMER', 'internal_tags': {'CTL': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'DWORD', 'array': 0
+                        }, 'PRE': {'offset': 4, 'tag_type': 'atomic', 
+    'data_type': 'DINT', 'array': 0
+                        }, 'ACC': {'offset': 8, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'EN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+                        }, 'TT': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+                        }, 'DN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+                        }
+                    }, 'attributes': ['CTL', 'PRE', 'ACC', 'EN', 'TT', 'DN'
+                    ], 'template': {'object_definition_size': 24, 'structure_size': 12, 'member_count': 6, 'structure_handle': 3971
+                    }
+                }, 'array': 0
+            }, 'HiHiAlarmDelayTmr': {'offset': 168, 'tag_type': 'struct', 'data_type': {'name': 'TIMER', 'internal_tags': {'CTL': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'DWORD', 'array': 0
+                        }, 'PRE': {'offset': 4, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'ACC': {'offset': 8, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'EN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+                        }, 'TT': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+                        }, 'DN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+                        }
+                    }, 'attributes': ['CTL', 'PRE', 'ACC', 'EN', 'TT', 'DN'
+                    ], 'template': {'object_definition_size': 24, 'structure_size': 12, 'member_count': 6, 'structure_handle': 3971
+                    }
+                }, 'array': 0
+            }, 'LoLoAlarmDelayTmr': {'offset': 180, 'tag_type': 'struct', 'data_type': {'name': 'TIMER', 'internal_tags': {'CTL': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'DWORD', 'array': 0
+                        }, 'PRE': {'offset': 4, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'ACC': {'offset': 8, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'EN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+                        }, 'TT': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+                        }, 'DN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+                        }
+                    }, 'attributes': ['CTL', 'PRE', 'ACC', 'EN', 'TT', 'DN'
+                    ], 'template': {'object_definition_size': 24, 'structure_size': 12, 'member_count': 6, 'structure_handle': 3971
+                    }
+                }, 'array': 0
+            }, 'OnsHiHi': {'offset': 114, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 1
+            }, 'OnsHi': {'offset': 114, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 2
+            }, 'OnsLo': {'offset': 114, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 3
+            }, 'OnsLoLo': {'offset': 114, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 4
+            }, 'RawInMinusRawMin': {'offset': 192, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'EuMaxMinusEuMin': {'offset': 196, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'RawMaxMinusRawMin': {'offset': 200, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+            }, 'OnsChFlt': {'offset': 114, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+            }, 'ChFltAlarmDelayTmr': {'offset': 204, 'tag_type': 'struct', 'data_type': {'name': 'TIMER', 'internal_tags': {'CTL': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'DWORD', 'array': 0
+                        }, 'PRE': {'offset': 4, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'ACC': {'offset': 8, 'tag_type': 'atomic', 
+    'data_type': 'DINT', 'array': 0
+                        }, 'EN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+                        }, 'TT': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+                        }, 'DN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+                        }
+                    }, 'attributes': ['CTL', 'PRE', 'ACC', 'EN', 'TT', 'DN'
+                    ], 'template': {'object_definition_size': 24, 'structure_size': 12, 'member_count': 6, 'structure_handle': 3971
+                    }
+                }, 'array': 0
+            }, 'HiHiArmDelayTmr': {'offset': 216, 'tag_type': 'struct', 'data_type': {'name': 'TIMER', 'internal_tags': {'CTL': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'DWORD', 'array': 0
+                        }, 'PRE': {'offset': 4, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'ACC': {'offset': 8, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'EN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+                        }, 'TT': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+                        }, 'DN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+                        }
+                    }, 'attributes': ['CTL', 'PRE', 'ACC', 'EN', 'TT', 'DN'
+                    ], 'template': {'object_definition_size': 24, 'structure_size': 12, 'member_count': 6, 'structure_handle': 3971
+                    }
+                }, 'array': 0
+            }, 'HiArmDelayTmr': {'offset': 228, 'tag_type': 'struct', 'data_type': {'name': 'TIMER', 'internal_tags': {'CTL': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'DWORD', 'array': 0
+                        }, 'PRE': {'offset': 4, 'tag_type': 
+    'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'ACC': {'offset': 8, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'EN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+                        }, 'TT': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+                        }, 'DN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+                        }
+                    }, 'attributes': ['CTL', 'PRE', 'ACC', 'EN', 'TT', 'DN'
+                    ], 'template': {'object_definition_size': 24, 'structure_size': 12, 'member_count': 6, 'structure_handle': 3971
+                    }
+                }, 'array': 0
+            }, 'LoArmDelayTmr': {'offset': 240, 'tag_type': 'struct', 'data_type': {'name': 'TIMER', 'internal_tags': {'CTL': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'DWORD', 'array': 0
+                        }, 'PRE': {'offset': 4, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'ACC': {'offset': 8, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'EN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+                        }, 'TT': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+                        }, 'DN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 5
+                        }
+                    }, 'attributes': ['CTL', 'PRE', 'ACC', 'EN', 'TT', 'DN'
+                    ], 'template': {'object_definition_size': 24, 'structure_size': 12, 'member_count': 6, 'structure_handle': 3971
+                    }
+                }, 'array': 0
+            }, 'LoLoArmDelayTmr': {'offset': 252, 'tag_type': 'struct', 'data_type': {'name': 'TIMER', 'internal_tags': {'CTL': {'offset': 0, 'tag_type': 'atomic', 'data_type': 'DWORD', 'array': 0
+                        }, 'PRE': {'offset': 4, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'ACC': {'offset': 8, 'tag_type': 'atomic', 'data_type': 'DINT', 'array': 0
+                        }, 'EN': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 7
+                        }, 'TT': {'offset': 3, 'tag_type': 'atomic', 'data_type': 'BOOL', 'bit': 6
+                        }, 'DN': {'offset': 3, 'tag_type': 'atomic', 
+    'data_type': 'BOOL', 'bit': 5
+                        }
+                    }, 'attributes': ['CTL', 'PRE', 'ACC', 'EN', 'TT', 'DN'
+                    ], 'template': {'object_definition_size': 24, 'structure_size': 12, 'member_count': 6, 'structure_handle': 3971
+                    }
+                }, 'array': 0
+            }
+        }, 'attributes': ['EnableIn', 'EnableOut', 'RawIn', 'RawMin', 'RawMax', 'EuMin', 'EuMax', 'LimitOutput', 'EuOut', 'DeviceEnable', 'HiHiSet', 'HiHiSetMin', 'HiHiSetMax', 'HiSet', 'HiSetMin', 'HiSetMax', 'LoSet', 'LoSetMin', 'LoSetMax', 'LoLoSet', 'LoLoSetMin', 'LoLoSetMax', 'HiHiOut', 'HiOut', 'LoOut', 'LoLoOut', 'ChFltOut', 'HiHiArm', 'HiHiArmDelay', 'HiHiAlarmDelay', 'HiHiHornPriority', 'HiHiExists', 'HiHiNak', 'HiHiActive', 'HiHiAck', 'HiHiResetLatch', 'HiHiReset', 'HiHiInhibit', 'HiArm', 'HiArmDelay', 'HiAlarmDelay', 'HiHornPriority', 'HiExists', 'HiNak', 'HiActive', 'HiAck', 'HiResetLatch', 'HiReset', 'HiInhibit', 'LoArm', 'LoArmDelay', 'LoAlarmDelay', 'LoHornPriority', 'LoExists', 'LoNak', 'LoActive', 'LoAck', 'LoResetLatch', 'LoReset', 'LoInhibit', 'LoLoArm', 'LoLoArmDelay', 'LoLoAlarmDelay', 'LoLoHornPriority', 'LoLoExists', 'LoLoNak', 'LoLoActive', 'LoLoAck', 'LoLoResetLatch', 'LoLoReset', 'LoLoInhibit', 'ChFltArm', 'ChFltMax', 'ChFltMin', 'ChFltAlarmDelay', 'ChFltHornPriority', 'ChFltExists', 'ChFltNak', 'ChFltActive', 'ChFltAck', 'ChFltResetLatch', 'ChFltReset', 'ChFltInhibit', 'HiAlarmDelayTmr', 'LoAlarmDelayTmr', 'HiHiAlarmDelayTmr', 'LoLoAlarmDelayTmr', 'OnsHiHi', 'OnsHi', 'OnsLo', 'OnsLoLo', 'RawInMinusRawMin', 'EuMaxMinusEuMin', 'RawMaxMinusRawMin', 'OnsChFlt', 'ChFltAlarmDelayTmr', 'HiHiArmDelayTmr', 'HiArmDelayTmr', 'LoArmDelayTmr', 'LoLoArmDelayTmr'
+        ], 'template': {'object_definition_size': 589, 'structure_size': 264, 'member_count': 102, 'structure_handle': 19026
+        }
+    }
+}
