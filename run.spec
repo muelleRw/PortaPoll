@@ -5,7 +5,7 @@ block_cipher = None
 
 a = Analysis(['run.py'],
              pathex=['C:\\Users\\wmuel\\Desktop\\Python\\Atlas Carbon\\TrailerPLC'],
-             binaries=[],
+             binaries=[('config', 'config')],
              datas=[],
              hiddenimports=[],
              hookspath=[],

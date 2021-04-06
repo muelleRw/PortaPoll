@@ -22,10 +22,9 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout_2 = QGridLayout(self.centralwidget)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.tableWidget = QTableWidget(self.centralwidget)
-        self.tableWidget.setObjectName(u"tableWidget")
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
-        self.gridLayout_2.addWidget(self.tableWidget, 6, 0, 1, 2)
+        self.gridLayout_2.addItem(self.verticalSpacer, 6, 0, 1, 1)
 
         self.label_error = QLabel(self.centralwidget)
         self.label_error.setObjectName(u"label_error")
@@ -34,11 +33,12 @@ class Ui_MainWindow(object):
         font.setBold(True)
         self.label_error.setFont(font)
 
-        self.gridLayout_2.addWidget(self.label_error, 7, 0, 1, 2)
+        self.gridLayout_2.addWidget(self.label_error, 8, 0, 1, 2)
 
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+        self.tableWidget = QTableWidget(self.centralwidget)
+        self.tableWidget.setObjectName(u"tableWidget")
 
-        self.gridLayout_2.addItem(self.verticalSpacer, 5, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.tableWidget, 7, 0, 1, 2)
 
         self.gridLayout = QGridLayout()
         self.gridLayout.setObjectName(u"gridLayout")
@@ -153,6 +153,14 @@ class Ui_MainWindow(object):
 
 
         self.gridLayout_2.addLayout(self.gridLayout, 1, 0, 1, 2)
+
+        self.frame_chart = QFrame(self.centralwidget)
+        self.frame_chart.setObjectName(u"frame_chart")
+        self.frame_chart.setFrameShape(QFrame.Box)
+        self.frame_chart.setFrameShadow(QFrame.Plain)
+        self.frame_chart.setLineWidth(2)
+
+        self.gridLayout_2.addWidget(self.frame_chart, 5, 0, 1, 2)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)

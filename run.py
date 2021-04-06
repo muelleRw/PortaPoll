@@ -1,9 +1,10 @@
 import sys
 from PySide2.QtGui import QIcon
-from PySide2.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QFileDialog
+from PySide2.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QFileDialog, QVBoxLayout, QStyledItemDelegate
 from ui_main import Ui_MainWindow
 from pycomm3 import LogixDriver
-from PySide2.QtCore import QTimer, QThreadPool
+from PySide2.QtCore import QTimer, QThreadPool, QDateTime
+from PySide2.QtCharts import QtCharts
 from utils import resource_path
 from datetime import datetime
 import time
@@ -19,7 +20,11 @@ try:
     QtWin.setCurrentProcessExplicitAppUserModelID(myappid)    
 except ImportError:
     pass
-
+class DateTimeDelegate(QStyledItemDelegate):
+    def initStyleOption(self, option, index):
+        super(DateTimeDelegate, self).initStyleOption(option, index)
+        value = index.data()
+        option.text = QDateTime.fromMSecsSinceEpoch(value).toString("dd.MM.yyyy")
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -63,6 +68,35 @@ class MainWindow(QMainWindow):
         print("Multithreading with maximum %d threads" % self.threadpool.maxThreadCount())
 
         self.poller_thread()
+
+        #self.chart_table()
+
+    def chart_table(self):
+        delegate = DateTimeDelegate(self.ui.tableWidget)
+        self.ui.tableWidget.setItemDelegateForColumn(0, delegate)
+        chart = QtCharts.QChart()
+        self.chartView = QtCharts.QChartView(chart)
+        self.chartView.setFixedSize(600, 430)
+
+        layout = QVBoxLayout(self)
+        layout.addWidget(self.chartView)
+        self.ui.frame_chart.setLayout(layout)
+
+        series = QtCharts.QLineSeries(name="Value")
+        mapper = QtCharts.QVXYModelMapper(self, xColumn=0, yColumn=1)
+        mapper.setModel(self.ui.tableWidget.model())
+        mapper.setSeries(series)
+        chart.addSeries(mapper.series())
+
+        self.axis_X = QtCharts.QDateTimeAxis()
+        self.axis_X.setFormat("MMM yyyy")
+        self.axis_Y = QtCharts.QValueAxis()
+
+        chart.setAxisX(self.axis_X, series)
+        chart.setAxisY(self.axis_Y, series)
+        self.axis_Y.setRange(0, 0)
+        self.axis_Y.setLabelFormat("%.2f")
+        chart.setTitle("Chart")
     
     def log_file(self):
         file_name = QFileDialog.getSaveFileName(self, "Save", "C:/Test Trailer Log.csv", "CSV (Comma delimited) (*.csv)")
@@ -70,7 +104,7 @@ class MainWindow(QMainWindow):
             self.ui.label_log_file.setText(file_name[0])
             self.settings["log_file"] = file_name[0]
             with open(resource_path("config/settings.json"), 'w') as f:
-                json.dump(self.settings, f)
+                json.dump(self.settings, f, indent=4)
 
     def ip_change(self):
         self.settings['default_ip'] = self.ui.lineEdit_ip.text()
@@ -82,12 +116,6 @@ class MainWindow(QMainWindow):
 
     def poller_thread(self):
         worker = Worker(self.poll_plc)
-
-        #worker.signals.result.connect(self.print_output)
-        #worker.signals.finished.connect(self.thread_complete)
-        #worker.signals.progress.connect(self.progress_fn)
-
-        # Execute
         self.threadpool.start(worker)
 
     def poll_plc(self):
@@ -129,8 +157,6 @@ class MainWindow(QMainWindow):
                 
                 time.sleep(1)
                 self.ui.label_countdown.setText(str(int(self.ui.label_countdown.text()) - 1))
-
-        
 
 if __name__ == "__main__":
     app = QApplication([])

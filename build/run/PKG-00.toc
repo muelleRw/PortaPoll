@@ -1,4 +1,4 @@
-('C:\\Users\\wmuel\\Desktop\\Python\\Atlas '
+('C:\\Users\\Weston\\Desktop\\Python\\Atlas '
  'Carbon\\TrailerPLC\\build\\run\\PKG-00.pkg',
  {'BINARY': 1,
   'DATA': 1,
@@ -8,39 +8,39 @@
   'PYSOURCE': 1,
   'PYZ': 0},
  [('PYZ-00.pyz',
-   'C:\\Users\\wmuel\\Desktop\\Python\\Atlas '
+   'C:\\Users\\Weston\\Desktop\\Python\\Atlas '
    'Carbon\\TrailerPLC\\build\\run\\PYZ-00.pyz',
    'PYZ'),
-  ('struct', 'C:\\Python39\\lib\\struct.pyo', 'PYMODULE'),
+  ('struct', 'C:\\Python\\Python39\\lib\\struct.pyo', 'PYMODULE'),
   ('pyimod01_os_path',
-   'c:\\users\\wmuel\\desktop\\python\\atlas '
+   'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
    'PYMODULE'),
   ('pyimod02_archive',
-   'c:\\users\\wmuel\\desktop\\python\\atlas '
+   'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
    'PYMODULE'),
   ('pyimod03_importers',
-   'c:\\users\\wmuel\\desktop\\python\\atlas '
+   'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
    'PYMODULE'),
   ('pyiboot01_bootstrap',
-   'c:\\users\\wmuel\\desktop\\python\\atlas '
+   'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
    'PYSOURCE'),
   ('pyi_rth_multiprocessing',
-   'C:\\Users\\wmuel\\Desktop\\Python\\Atlas '
+   'C:\\Users\\Weston\\Desktop\\Python\\Atlas '
    'Carbon\\TrailerPLC\\myenv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
    'PYSOURCE'),
   ('pyi_rth_pyside2',
-   'C:\\Users\\wmuel\\Desktop\\Python\\Atlas '
+   'C:\\Users\\Weston\\Desktop\\Python\\Atlas '
    'Carbon\\TrailerPLC\\myenv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyside2.py',
    'PYSOURCE'),
   ('run',
-   'C:\\Users\\wmuel\\Desktop\\Python\\Atlas Carbon\\TrailerPLC\\run.py',
+   'C:\\Users\\Weston\\Desktop\\Python\\Atlas Carbon\\TrailerPLC\\run.py',
    'PYSOURCE'),
   ('PortaPoll.exe.manifest',
-   'C:\\Users\\wmuel\\Desktop\\Python\\Atlas '
+   'C:\\Users\\Weston\\Desktop\\Python\\Atlas '
    'Carbon\\TrailerPLC\\build\\run\\run.exe.manifest',
    'BINARY')],
  True,
