@@ -5,8 +5,8 @@ block_cipher = None
 
 a = Analysis(['run.py'],
              pathex=['C:\\Users\\wmuel\\Desktop\\Python\\Atlas Carbon\\TrailerPLC'],
-             binaries=[('config', 'config')],
-             datas=[],
+             binaries=[('images', 'images'), ('config', 'config')],
+             datas=[('images', 'images')],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
@@ -26,7 +26,9 @@ exe = EXE(pyz,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
-          console=False )
+          console=False,
+          icon='images/sensor.ico'
+          )
 coll = COLLECT(exe,
                a.binaries,
                a.zipfiles,

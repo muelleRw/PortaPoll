@@ -16,7 +16,7 @@ from workers import Worker
 try:
     # Include in try/except block if you're also targeting Mac/Linux
     from PySide2.QtWinExtras import QtWin
-    myappid = 'mycompany.myproduct.subproduct.version'
+    myappid = 'wood.portapoll.1.0'
     QtWin.setCurrentProcessExplicitAppUserModelID(myappid)    
 except ImportError:
     pass
@@ -27,7 +27,7 @@ class DateTimeDelegate(QStyledItemDelegate):
         option.text = QDateTime.fromMSecsSinceEpoch(value).toString("dd.MM.yyyy")
 
 class MainWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self, app):
         super(MainWindow, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
@@ -160,7 +160,7 @@ class MainWindow(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication([])
-    app.setWindowIcon(QIcon('config/sensor.ico'))
-    window = MainWindow()
+    app.setWindowIcon(QIcon('images/sensor.ico'))
+    window = MainWindow(app)
     window.show()
     sys.exit(app.exec_())

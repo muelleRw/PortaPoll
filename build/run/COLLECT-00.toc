@@ -6,18 +6,6 @@
    'C:\\Users\\Weston\\Desktop\\Python\\Atlas '
    'Carbon\\TrailerPLC\\build\\run\\run.exe.manifest',
    'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qicns.dll',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qicns.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\platforms\\qminimal.dll',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qminimal.dll',
-   'BINARY'),
-  ('libEGL.dll',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\libEGL.dll',
-   'BINARY'),
   ('PySide2\\plugins\\imageformats\\qtiff.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qtiff.dll',
@@ -26,21 +14,37 @@
    'C:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qwebgl.dll',
    'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qtga.dll',
+  ('PySide2\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qtga.dll',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
    'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qico.dll',
+  ('PySide2\\plugins\\iconengines\\qsvgicon.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qico.dll',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\iconengines\\qsvgicon.dll',
    'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qsvg.dll',
+  ('libGLESv2.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qsvg.dll',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\libGLESv2.dll',
    'BINARY'),
-  ('PySide2\\plugins\\platforms\\qwindows.dll',
+  ('PySide2\\plugins\\platforms\\qoffscreen.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qwindows.dll',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qoffscreen.dll',
+   'BINARY'),
+  ('libEGL.dll',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\libEGL.dll',
+   'BINARY'),
+  ('d3dcompiler_47.dll',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\d3dcompiler_47.dll',
+   'BINARY'),
+  ('opengl32sw.dll',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\opengl32sw.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qpdf.dll',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qpdf.dll',
    'BINARY'),
   ('PySide2\\plugins\\imageformats\\qjpeg.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
@@ -50,53 +54,49 @@
    'C:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\bearer\\qgenericbearer.dll',
    'BINARY'),
-  ('PySide2\\plugins\\platforms\\qoffscreen.dll',
+  ('PySide2\\plugins\\styles\\qwindowsvistastyle.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qoffscreen.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qwbmp.dll',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qwbmp.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qgif.dll',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qgif.dll',
-   'BINARY'),
-  ('opengl32sw.dll',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\opengl32sw.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\styles\\qwindowsvistastyle.dll',
    'BINARY'),
   ('PySide2\\plugins\\imageformats\\qwebp.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qwebp.dll',
    'BINARY'),
-  ('PySide2\\plugins\\iconengines\\qsvgicon.dll',
+  ('PySide2\\plugins\\imageformats\\qsvg.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\iconengines\\qsvgicon.dll',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qsvg.dll',
    'BINARY'),
-  ('d3dcompiler_47.dll',
+  ('PySide2\\plugins\\imageformats\\qico.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\d3dcompiler_47.dll',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qico.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qwbmp.dll',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qwbmp.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\platforms\\qminimal.dll',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qminimal.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qgif.dll',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qgif.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qicns.dll',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qicns.dll',
    'BINARY'),
   ('PySide2\\plugins\\platformthemes\\qxdgdesktopportal.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\platformthemes\\qxdgdesktopportal.dll',
    'BINARY'),
-  ('PySide2\\plugins\\styles\\qwindowsvistastyle.dll',
+  ('PySide2\\plugins\\imageformats\\qtga.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\styles\\qwindowsvistastyle.dll',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qtga.dll',
    'BINARY'),
-  ('libGLESv2.dll',
+  ('PySide2\\plugins\\platforms\\qwindows.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\libGLESv2.dll',
-   'BINARY'),
-  ('PySide2\\plugins\\imageformats\\qpdf.dll',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qpdf.dll',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qwindows.dll',
    'BINARY'),
   ('select', 'C:\\Python\\Python39\\DLLs\\select.pyd', 'EXTENSION'),
   ('_multiprocessing',
@@ -142,32 +142,27 @@
    'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\QtGui.pyd',
    'EXTENSION'),
+  ('Qt5Gui.dll',
+   'c:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Gui.dll',
+   'BINARY'),
   ('Qt5Core.dll',
    'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Core.dll',
    'BINARY'),
   ('VCRUNTIME140.dll', 'C:\\Python\\Python39\\VCRUNTIME140.dll', 'BINARY'),
-  ('Qt5Gui.dll',
-   'c:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Gui.dll',
-   'BINARY'),
   ('Qt5WebSockets.dll',
    'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5WebSockets.dll',
-   'BINARY'),
-  ('Qt5Quick.dll',
-   'c:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Quick.dll',
    'BINARY'),
   ('Qt5Network.dll',
    'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Network.dll',
    'BINARY'),
-  ('Qt5Svg.dll',
+  ('Qt5Quick.dll',
    'c:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Svg.dll',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Quick.dll',
    'BINARY'),
-  ('VCRUNTIME140_1.dll', 'C:\\Python\\Python39\\VCRUNTIME140_1.dll', 'BINARY'),
   ('Qt5VirtualKeyboard.dll',
    'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5VirtualKeyboard.dll',
@@ -176,13 +171,13 @@
    'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Qml.dll',
    'BINARY'),
-  ('Qt5DBus.dll',
+  ('Qt5Svg.dll',
    'c:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5DBus.dll',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Svg.dll',
    'BINARY'),
-  ('Qt5Widgets.dll',
-   'c:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Widgets.dll',
+  ('VCRUNTIME140_1.dll',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\VCRUNTIME140_1.dll',
    'BINARY'),
   ('MSVCP140.dll',
    'C:\\users\\weston\\desktop\\python\\atlas '
@@ -192,17 +187,25 @@
    'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Pdf.dll',
    'BINARY'),
+  ('Qt5Widgets.dll',
+   'c:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5Widgets.dll',
+   'BINARY'),
+  ('Qt5DBus.dll',
+   'c:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5DBus.dll',
+   'BINARY'),
   ('python39.dll', 'C:\\Python\\Python39\\python39.dll', 'BINARY'),
   ('libssl-1_1.dll', 'C:\\Python\\Python39\\DLLs\\libssl-1_1.dll', 'BINARY'),
   ('libcrypto-1_1.dll',
    'C:\\Python\\Python39\\DLLs\\libcrypto-1_1.dll',
    'BINARY'),
   ('libffi-7.dll', 'C:\\Python\\Python39\\DLLs\\libffi-7.dll', 'BINARY'),
-  ('python3.dll', 'C:\\Python\\Python39\\python3.dll', 'BINARY'),
   ('pyside2.abi3.dll',
    'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\pyside2.abi3.dll',
    'BINARY'),
+  ('python3.dll', 'C:\\Python\\Python39\\python3.dll', 'BINARY'),
   ('Qt5WinExtras.dll',
    'c:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\Qt5WinExtras.dll',
@@ -225,63 +228,99 @@
    'BINARY'),
   ('config\\settings.json', 'config\\settings.json', 'BINARY'),
   ('config\\attributes', 'config\\attributes', 'BINARY'),
-  ('config\\sensor.ico', 'config\\sensor.ico', 'BINARY'),
+  ('images\\sensor.ico', 'images\\sensor.ico', 'BINARY'),
   ('base_library.zip',
    'C:\\Users\\Weston\\Desktop\\Python\\Atlas '
    'Carbon\\TrailerPLC\\build\\run\\base_library.zip',
    'DATA'),
-  ('PySide2\\translations\\qtbase_en.qm',
+  ('PySide2\\translations\\qtbase_tr.qm',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_en.qm',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_tr.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_cs.qm',
+  ('PySide2\\translations\\qtbase_gd.qm',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_cs.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_da.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_da.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_it.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_it.qm',
-   'DATA'),
-  ('Include\\pyconfig.h', 'C:\\Python\\Python39\\Include\\pyconfig.h', 'DATA'),
-  ('PySide2\\translations\\qtbase_fi.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_fi.qm',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_gd.qm',
    'DATA'),
   ('PySide2\\translations\\qtbase_sk.qm',
    'C:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_sk.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_es.qm',
+  ('PySide2\\translations\\qtbase_uk.qm',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_es.qm',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_uk.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_ja.qm',
+  ('PySide2\\translations\\qtbase_ca.qm',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_ja.qm',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_ca.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_it.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_it.qm',
+   'DATA'),
+  ('PySide2\\qt.conf',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\qt.conf',
    'DATA'),
   ('PySide2\\translations\\qtbase_ar.qm',
    'C:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_ar.qm',
    'DATA'),
-  ('PySide2\\translations\\qtbase_uk.qm',
+  ('PySide2\\translations\\qtbase_ko.qm',
    'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_uk.qm',
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_ko.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_zh_TW.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_zh_TW.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_de.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_de.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_ru.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_ru.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_en.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_en.qm',
+   'DATA'),
+  ('Include\\pyconfig.h', 'C:\\Python\\Python39\\Include\\pyconfig.h', 'DATA'),
+  ('PySide2\\translations\\qtbase_es.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_es.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_fi.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_fi.qm',
    'DATA'),
   ('PySide2\\translations\\qtbase_he.qm',
    'C:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_he.qm',
    'DATA'),
+  ('PySide2\\translations\\qtbase_lv.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_lv.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_bg.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_bg.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_da.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_da.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_cs.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_cs.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_ja.qm',
+   'C:\\users\\weston\\desktop\\python\\atlas '
+   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_ja.qm',
+   'DATA'),
   ('PySide2\\translations\\qtbase_fr.qm',
    'C:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_fr.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_gd.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_gd.qm',
    'DATA'),
   ('PySide2\\translations\\qtbase_pl.qm',
    'C:\\users\\weston\\desktop\\python\\atlas '
@@ -290,40 +329,4 @@
   ('PySide2\\translations\\qtbase_hu.qm',
    'C:\\users\\weston\\desktop\\python\\atlas '
    'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_hu.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_bg.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_bg.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_ko.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_ko.qm',
-   'DATA'),
-  ('PySide2\\qt.conf',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\qt.conf',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_ca.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_ca.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_de.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_de.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_zh_TW.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_zh_TW.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_ru.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_ru.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_tr.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_tr.qm',
-   'DATA'),
-  ('PySide2\\translations\\qtbase_lv.qm',
-   'C:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PySide2\\translations\\qtbase_lv.qm',
    'DATA')],)
