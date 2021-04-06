@@ -33,7 +33,7 @@ class MainWindow(QMainWindow):
         self.ui.treeWidget.setSortingEnabled(True)
         self.tags = []
         self.poll_tags = []
-        self.ui.lineEdit_ip.editingFinished.connect(self.get_plc_tags)
+        self.ui.comboBox_ip.currentTextChanged.connect(self.get_plc_tags)
 
         #self.ui.tableWidget.setColumnCount(len(self.columns))
         #for i in range(0, len(self.columns)):
@@ -59,7 +59,7 @@ class MainWindow(QMainWindow):
     def get_plc_tags(self):
         self.tags.clear()
         self.ui.treeWidget
-        with LogixDriver(self.ui.lineEdit_ip.text()) as plc:
+        with LogixDriver(self.ui.comboBox_ip.currentText()) as plc:
             self.tags = plc.get_tag_list()
         for i in self.tags:
             parent = QTreeWidgetItem(self.ui.treeWidget)
@@ -91,7 +91,7 @@ class MainWindow(QMainWindow):
                 
                 try:
                     fields = []
-                    with LogixDriver(self.ui.lineEdit_ip.text()) as plc:
+                    with LogixDriver(self.ui.comboBox_ip.currentText()) as plc:
                         date_stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                         fields.append(date_stamp)
 

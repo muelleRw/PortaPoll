@@ -31,5 +31,5 @@ class Worker(QRunnable):
             #self.signals.error.emit((exctype, value, traceback.format_exc()))
         #else:
         #    self.signals.result.emit(result)  # Return the result of the processing
-        finally:
-            self.signals.finished.emit()  # Done
+        #finally:
+        #    self.signals.finished.emit()  # Done
