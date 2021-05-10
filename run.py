@@ -6,12 +6,16 @@ from pycomm3 import LogixDriver
 from PySide2.QtCore import QTimer, QThreadPool, QDateTime
 from PySide2.QtCharts import QtCharts
 from utils import resource_path
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 import csv
 import json
 
 from workers import Worker
+
+from pyqtgraph import PlotWidget, plot, DateAxisItem
+import pyqtgraph as pg
+from random import randint
 
 try:
     # Include in try/except block if you're also targeting Mac/Linux
@@ -20,11 +24,9 @@ try:
     QtWin.setCurrentProcessExplicitAppUserModelID(myappid)    
 except ImportError:
     pass
-class DateTimeDelegate(QStyledItemDelegate):
-    def initStyleOption(self, option, index):
-        super(DateTimeDelegate, self).initStyleOption(option, index)
-        value = index.data()
-        option.text = QDateTime.fromMSecsSinceEpoch(value).toString("dd.MM.yyyy")
+class TimeAxisItem(pg.AxisItem):
+    def tickStrings(self, values, scale, spacing):
+        return [datetime.fromtimestamp(value) for value in values]
 
 class MainWindow(QMainWindow):
     def __init__(self, app):
@@ -58,6 +60,7 @@ class MainWindow(QMainWindow):
         self.ui.tableWidget.setHorizontalHeaderItem(0, QTableWidgetItem("Date"))
         for i in range(0, len(self.settings["tags"])):
             self.ui.tableWidget.setHorizontalHeaderItem(i+1, QTableWidgetItem(self.settings["tags"][i]))
+            self.ui.comboBox_chart_tag.addItem(self.settings["tags"][i])
         
         self.ui.lineEdit_ip.setText(self.settings['default_ip'])
         self.ui.lineEdit_ip.editingFinished.connect(self.ip_change)
@@ -69,35 +72,27 @@ class MainWindow(QMainWindow):
 
         self.poller_thread()
 
-        #self.chart_table()
+        self.chart_table()
 
     def chart_table(self):
-        delegate = DateTimeDelegate(self.ui.tableWidget)
-        self.ui.tableWidget.setItemDelegateForColumn(0, delegate)
-        chart = QtCharts.QChart()
-        self.chartView = QtCharts.QChartView(chart)
-        self.chartView.setFixedSize(600, 430)
+        #base = datetime.today()
+        #self.x = [base - timedelta(seconds=x) for x in range(20)]  # 100 time points
+        self.x=[]
+        self.y=[]
+        #self.y = [0 for _ in range(20)]  # 100 data points
+
+        date_axis = TimeAxisItem(orientation='bottom')
+        self.graph = pg.PlotWidget(axisItems = {'bottom': date_axis})
+        #self.graph.plot(x=[x.timestamp() for x in self.x], y=self.y, clear=True)
 
         layout = QVBoxLayout(self)
-        layout.addWidget(self.chartView)
+        layout.addWidget(self.graph)
         self.ui.frame_chart.setLayout(layout)
+        
+    def refresh_chart(self):
+        pen = pg.mkPen(color=(255, 0, 0))
+        self.graph.plot(x=[x.timestamp() for x in self.x], y=self.y, pen=pen, clear=True)
 
-        series = QtCharts.QLineSeries(name="Value")
-        mapper = QtCharts.QVXYModelMapper(self, xColumn=0, yColumn=1)
-        mapper.setModel(self.ui.tableWidget.model())
-        mapper.setSeries(series)
-        chart.addSeries(mapper.series())
-
-        self.axis_X = QtCharts.QDateTimeAxis()
-        self.axis_X.setFormat("MMM yyyy")
-        self.axis_Y = QtCharts.QValueAxis()
-
-        chart.setAxisX(self.axis_X, series)
-        chart.setAxisY(self.axis_Y, series)
-        self.axis_Y.setRange(0, 0)
-        self.axis_Y.setLabelFormat("%.2f")
-        chart.setTitle("Chart")
-    
     def log_file(self):
         file_name = QFileDialog.getSaveFileName(self, "Save", "C:/Test Trailer Log.csv", "CSV (Comma delimited) (*.csv)")
         if file_name:
@@ -126,12 +121,13 @@ class MainWindow(QMainWindow):
                     try:
                         
                         with LogixDriver(self.ui.lineEdit_ip.text()) as plc:
-                            date_stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                            curr_datetime = datetime.now()
+                            date_stamp = curr_datetime.strftime("%Y-%m-%d %H:%M:%S")
                             
-
-                            row = self.ui.tableWidget.rowCount() - 1
-                            if row >= 20:
-                                self.ui.tableWidget.removeRow(row)
+                            
+                            row = self.ui.tableWidget.rowCount()
+                            if row >= self.ui.spinBox_chart_points.value():
+                                self.ui.tableWidget.removeRow(row-1)
                             self.ui.tableWidget.insertRow(0)
                             self.ui.tableWidget.setItem(0, 0, QTableWidgetItem(date_stamp))
 
@@ -145,6 +141,14 @@ class MainWindow(QMainWindow):
                                     fields.append(val)
                                     writer.writerow(fields)
 
+                                    if i == self.ui.comboBox_chart_tag.currentText():
+                                        self.x.append(curr_datetime)
+                                        self.y.append(val)
+                                        if len(self.x) > self.ui.spinBox_chart_points.value():
+                                            self.x.pop(0)
+                                        if len(self.y) > self.ui.spinBox_chart_points.value():
+                                            self.y.pop(0)
+                                        self.refresh_chart()
 
                                     self.ui.tableWidget.setItem(0, self.settings["tags"].index(i)+1, QTableWidgetItem("%.2f" % val))
                     except Exception as error:
