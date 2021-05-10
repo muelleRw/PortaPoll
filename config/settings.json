@@ -1,13 +1,9 @@
 {
-    "log_file": "C:/Users/Weston/Desktop/Test Trailer Log.csv",
-    "default_ip": "192.168.1.107",
-    "ip_list": [
-        "192.168.1.105",
-        "192.168.1.106",
-        "192.168.1.107"
-    ],
+    "log_file": "C:/Users/Weston/Desktop/Test Trailer Log.csv", 
+    "default_ip": "192.168.1.107", 
+    "ip_list": ["192.168.1.105", "192.168.1.106", "192.168.1.107"], 
     "tags": [
-        "LIT_Plant_Available_Water.EuOut",
+        "LIT_Plant_Available_Water.EuOut", 
         "PIT_LoadoutBlwr.EuOut"
     ]
 }

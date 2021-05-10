@@ -109,7 +109,7 @@ class MainWindow(QMainWindow):
     def ip_change(self):
         self.settings['default_ip'] = self.ui.lineEdit_ip.text()
         with open(resource_path("config/settings.json"), 'w') as f:
-            json.dump(self.settings, f)
+            json.dump(self.settings, f, indent=4)
     
     def thread_stop(self):
         self.run_poll = False
