@@ -1,5 +1,4 @@
-('C:\\Users\\Weston\\Desktop\\Python\\Atlas '
- 'Carbon\\TrailerPLC\\build\\run\\PortaPoll.exe',
+('C:\\Users\\Weston\\Desktop\\Python\\PortaPoll\\build\\run\\PortaPoll.exe',
  False,
  False,
  True,
@@ -11,46 +10,38 @@
  True,
  'PortaPoll.pkg',
  [('PYZ-00.pyz',
-   'C:\\Users\\Weston\\Desktop\\Python\\Atlas '
-   'Carbon\\TrailerPLC\\build\\run\\PYZ-00.pyz',
+   'C:\\Users\\Weston\\Desktop\\Python\\PortaPoll\\build\\run\\PYZ-00.pyz',
    'PYZ'),
   ('struct', 'C:\\Python\\Python39\\lib\\struct.pyo', 'PYMODULE'),
   ('pyimod01_os_path',
-   'c:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
+   'c:\\users\\weston\\desktop\\python\\portapoll\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
    'PYMODULE'),
   ('pyimod02_archive',
-   'c:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
+   'c:\\users\\weston\\desktop\\python\\portapoll\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
    'PYMODULE'),
   ('pyimod03_importers',
-   'c:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
+   'c:\\users\\weston\\desktop\\python\\portapoll\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
    'PYMODULE'),
   ('pyiboot01_bootstrap',
-   'c:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'c:\\users\\weston\\desktop\\python\\portapoll\\myenv\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
    'PYSOURCE'),
   ('pyi_rth_multiprocessing',
-   'C:\\Users\\Weston\\Desktop\\Python\\Atlas '
-   'Carbon\\TrailerPLC\\myenv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'C:\\Users\\Weston\\Desktop\\Python\\PortaPoll\\myenv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
    'PYSOURCE'),
   ('pyi_rth_pyside2',
-   'C:\\Users\\Weston\\Desktop\\Python\\Atlas '
-   'Carbon\\TrailerPLC\\myenv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyside2.py',
+   'C:\\Users\\Weston\\Desktop\\Python\\PortaPoll\\myenv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyside2.py',
    'PYSOURCE'),
-  ('run',
-   'C:\\Users\\Weston\\Desktop\\Python\\Atlas Carbon\\TrailerPLC\\run.py',
+  ('pyi_rth_pkgres',
+   'C:\\Users\\Weston\\Desktop\\Python\\PortaPoll\\myenv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgres.py',
    'PYSOURCE'),
+  ('run', 'C:\\Users\\Weston\\Desktop\\Python\\PortaPoll\\run.py', 'PYSOURCE'),
   ('PortaPoll.exe.manifest',
-   'C:\\Users\\Weston\\Desktop\\Python\\Atlas '
-   'Carbon\\TrailerPLC\\build\\run\\run.exe.manifest',
+   'C:\\Users\\Weston\\Desktop\\Python\\PortaPoll\\build\\run\\run.exe.manifest',
    'BINARY')],
  [],
  False,
  False,
- 1617741717,
+ 1620667803,
  [('runw.exe',
-   'c:\\users\\weston\\desktop\\python\\atlas '
-   'carbon\\trailerplc\\myenv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\runw.exe',
+   'c:\\users\\weston\\desktop\\python\\portapoll\\myenv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\runw.exe',
    'EXECUTABLE')])

@@ -116,6 +116,8 @@ class MainWindow(QMainWindow):
     def poll_plc(self):
         while self.run_poll:
             while self.ui.pushButton_poll.isChecked():
+                if int(self.ui.label_countdown.text()) > self.ui.spinBox_poll.value():
+                    self.ui.label_countdown.setText(str(self.ui.spinBox_poll.value()))
                 if int(self.ui.label_countdown.text()) < 1:
                     self.ui.label_countdown.setText(str(self.ui.spinBox_poll.value()))
                     try:
